@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zen Quest</title>
+    <link rel="icon" href="favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    
+    <header id="home" class="header">
+        <img src="images/logo.png.jpg" class="logo">
+
+       <ul nav class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About </a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#register">Register</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </nav>
+       </ul>
+    </header>
+
+    <section>
+        <div id="about" class="container">
+            <div class="slideshow-container">
+                <div class="slides">
+                    <img src="images/pexels-photo-5928615.webp" alt="Image 1">
+                </div>
+        
+                <div class="slides">
+                    <img src="images/pexels-photo-5384534.jpeg" alt="Image 2">
+                </div>
+        
+                <div class="slides">
+                    <img src="images/pexels-photo-8556603.jpeg" alt="Image 3">
+                </div>
+        
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        
+            <div class="message-container">
+                <div class="message">
+                    At Zen Quest, we will help you discover inner peace and well-being. Our expert instructors guide you through rejuvenating yoga and meditation practices designed to enhance your body, mind, and spirit. 
+                </div>
+            </div>
+        </div>
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        
+    <script src="script.js"></script>
+    </section>
+    <section class="hero-section">
+        <div id="services">
+            <h1>Yoga and Meditation</h1>
+            <p>Subscribe monthly to experience the transformative power of yoga and meditation. Improve your mental clarity, reduce stress, and enhance your physical well-being.</p><br>
+            <h2>Products</h2>
+            <p>Explore our products ranging from healthy food products to crystals, vase plants and incense sticks.</p>
+        </div>
+    </section>
+    
+    <section class="product-section" id="products">
+        <div class="product" id="crystals">
+            <div class="product-content">
+                <h2>Crystals</h2>
+                <p>Enhance your energy and wellbeing with our natural crystals.</p>
+            </div>
+        </div>
+        <div class="product" id="vase-plants">
+            <div class="product-content">
+                <h2>Vase Plants</h2>
+                <p>Bring nature into your home with our beautiful vase plants.</p>
+            </div>
+        </div>
+        <div class="product" id="incense-sticks">
+            <div class="product-content">
+                <h2>Incense Sticks</h2>
+                <p>Create a calming atmosphere with our aromatic incense sticks.</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+    <section id="register" class="register-section">
+        <div class="register-container">
+            <h2>Register for Our Services</h2>
+            <p>Subscribe to enjoy exclusive benefits and a free month!</p>
+            <form id="registration-form" action="/register" method="POST">
+                <div class="form-group">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="surname">Surname:</label>
+                    <input type="text" id="surname" name="surname" required>
+                </div>
+                <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subscription-plan">Subscription Plan:</label>
+                    <select id="subscription-plan" name="subscription_plan" required>
+                        <option value="monthly">Monthly Subscription - Ksh 1700</option>
+                        <option value="yearly">Yearly Subscription - Ksh 18800</option>
+                    </select>
+                </div>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </section>
+    
+<footer id="contact" class="footer">
+    <div class="footer-content">
+        <p>Contact us:</p><br>
+        <ul class="social-media">
+            <li><a href="https://www.facebook.com/zenquest" target="_blank"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://www.x.com/zenquest" target="_blank" class="x-logo"><i class="fa-x-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/zenquest" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        </ul><br>
+        <p>Phone: +254 704137146</p><br>
+        <p>Head Office: 88 Zen Quest Towers, Westlands, Nairobi Kenya</p><br>
+        <p>Email Us: <a href="zenquest88@gmail.com">zenquest88@gmail.com</a></p><br>
+        <p>&copy; 2024 Zen Quest. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
